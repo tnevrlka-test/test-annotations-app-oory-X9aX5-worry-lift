@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-annotations-lgmt
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/tnevrlka-test/build-e2e-igkz-tenant/test-annotations-app-oory/test-annotations-lgmt@sha256:de7790eafa5e340af4b557552e26b97454d9c31a635cb53921bddb71b9d37fce
+        name: my-nginx
+        resources: {}
+status: {}
